@@ -14,7 +14,8 @@ jobs:
       - run: echo 'Write output to file'
       - run: echo 'This is the contents of this file' > myfile.txt
       - run: pwd
-      - run: ls -lf
+      # - run: ls -lf
+      - run: dir
       - uses: actions/upload-artifact@v2
         with:
           name: myfile.txt
