@@ -11,3 +11,6 @@ jobs:
         with:
           file-name: 'myscreenshot.jpg'
       - run: echo 'After screenshot'
+      - run: echo 'Write output to file'
+      - run: echo 'This is the contents of this file' > myfile.txt
+      - run: pwd myfile.txt
