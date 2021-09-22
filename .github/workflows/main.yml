@@ -6,6 +6,8 @@ jobs:
     name: Hello world action
     runs-on: macos-latest
     steps:
+      - run: echo 'Before screenshot'
       - uses: OrbitalOwen/desktop-screenshot-action@0.1
         with:
           file-name: 'myscreenshot.jpg'
+      - run: echo 'After screenshot'
