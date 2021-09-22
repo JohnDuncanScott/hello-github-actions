@@ -17,5 +17,5 @@ jobs:
       - run: ls -lf
       - uses: actions/upload-artifact@v2
         with:
-          name: Custom file upload
+          name: myfile.txt
           path: myfile.txt
