@@ -13,4 +13,9 @@ jobs:
       - run: echo 'After screenshot'
       - run: echo 'Write output to file'
       - run: echo 'This is the contents of this file' > myfile.txt
+      - run: pwd
       - run: ls -lf
+      - uses: actions/upload-artifact@v2
+        with:
+          name: Custom file upload
+          path: myfile.txt
