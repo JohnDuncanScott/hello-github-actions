@@ -6,10 +6,6 @@ jobs:
     name: Hello world action
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: ./action-a
-        with:
-          MY_NAME: "Mona"
       - uses: OrbitalOwen/desktop-screenshot-action@0.1
         with:
           file-name: 'myscreenshot.jpg'
